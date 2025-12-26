@@ -88,7 +88,7 @@ nav {
     background-color: rgba(255, 203, 105, 0.849);
     border-radius: 0 5px 5px 0;
     padding: .7rem .5rem;
-    outline: none;
+    margin-top: 10px;
 }
 
 .nav-right {
@@ -416,12 +416,17 @@ main {
     text-decoration: none;
     color: white;
     margin-left: 1rem;
-
 }
 
 
 
 @media screen and (max-width: 900px) {
+
+    .main-nav-menu{
+        height: 10%;
+        width: 100%
+    }
+
     :root {
         font-size: 2vw;
     }
