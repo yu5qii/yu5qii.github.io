@@ -612,7 +612,7 @@ main {
     }
 
     nav {
-        height: 20%;
+        height: 30%;
     }
 
     .nav-logo img {
@@ -649,6 +649,10 @@ main {
 
     .nav-options {
         height: 5vw;
+    }
+
+    .hide {
+        font-size: 0px;
     }
 
     .carousel {
