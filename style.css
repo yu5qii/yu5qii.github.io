@@ -600,7 +600,7 @@ main {
 
 
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
 
     .main-nav-menu{
         height: 10%;
@@ -653,6 +653,8 @@ main {
 
     .hide {
         font-size: 0px;
+        width: 0;
+        height: 0;
     }
 
     .carousel {
@@ -663,14 +665,96 @@ main {
         height: 4vw;
     }
 
+    .items-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, auto) ;
+        /* align-items: center;
+        justify-content: space-evenly;
+        justify-items: center; */
+    }
+
+    .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8 {
+        justify-self: center;
+    }
+    .item2 {
+        grid-column-start: 2;
+    }
+    .item3 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    .item4 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    .item5 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    .item6 {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+    .item7 {
+        
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+    .item8 {
+        grid-row-start: 4;
+        grid-column-start: 2;}
+    
+    .item-card-horizontal-1 {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+
+    .item-card-horizontal-2 {
+        grid-row-start: 6;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+
+    .item-card-horizontal-3 {
+        grid-row-start: 7;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+
+    .item-card-horizontal-4 {
+        grid-row-start: 8;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+
+    iframe {
+        /* width: 40%; */
+        height: 10rem;
+        width: auto;
+    }
+
+    .images-horizontal {
+        width: 5rem;
+        height: auto;
+    }
+
     .item-card {
-        height: 25vw;
-        flex: 1 0 20vw;
+        height: 42vw;
+        flex: 1 1 25vw;
         font-size: .5rem;
+        width: 37vw;
+        align-items: center;
     }
 
     .item-card img {
-        height: 14vw;
+        height: 10vw;
+    }
+
+    .hide-img {
+        width: 0px;
+        height: 0px;
     }
 
     .back-option {
